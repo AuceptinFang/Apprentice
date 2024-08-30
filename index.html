@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> (^-^) </title>
+    <title>(^-^)</title>
     <style>
         body {
             display: flex;
@@ -39,16 +39,17 @@
 </head>
 <body>
     <h1>Welcome here</h1>
-    <button id="travel" onclick="moveButton()">点击这个按钮，进入一个神秘的网页</button>
+    <button onclick="relordPage()">点击这个按钮，进入一个神秘的网页</button>
 
     <script>
         function relordPage() {
+            window.location.reload();
             var windowWidth = window.innerWidth
             var windowHeight = window.innerHeight
 
             var randomX =Math.floor(Math.random()*(windowWidth-button.offsetWidth));
             var randomY =Math.floor(Math.random()*(windowHeight-button.offsetHeight));
-            var button = document.getElementById('travel');
+
             button.style.left = randomX + 'px';
             button.style.top = randomY +'px';
         }
