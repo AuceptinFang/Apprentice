@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WAND2</title>
+    <style>
+        body {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            background-color: aqua;
+        }
+        #randomButton {
+            position: absolute;
+        }
+        button {
+             font-size: large;
+             padding: 10px 20px;
+             color:blue
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>旅行家</h1>
+    <button id="randomButton" onclick="moveButton()">旅行家之门</button>
+
+    <script>
+        function moveButton() {
+            // 获取窗口的宽度和高度
+            var windowWidth = window.innerWidth;
+            var windowHeight = window.innerHeight;
+
+            // 随机生成按钮的新坐标
+            var randomX = Math.floor(Math.random() * (windowWidth - 100)); // 减去按钮的宽度
+            var randomY = Math.floor(Math.random() * (windowHeight - 50)); // 减去按钮的高度
+
+            // 设置按钮的新位置
+            var button = document.getElementById('randomButton');
+            button.style.left = randomX + 'px';
+            button.style.top = randomY + 'px';
+        }
+    </script>
+</body>
+</html>
