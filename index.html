@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Refresh Button Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            background-color: #9ea6e0;
+        }
+        h1 {
+            font-size: 36px;  /* 字体大小 */
+            color: #333;      /* 字体颜色 */
+            text-align: center; /* 居中对齐 */
+        }
+
+        /* 设置按钮的大小、颜色和居中 */
+        button {
+            font-size: 20px;    /* 字体大小 */
+            padding: 10px 20px; /* 内边距（按钮的大小） */
+            margin-top: 20px;   /* 按钮和标题的间距 */
+            cursor: pointer;    /* 鼠标悬停时的指针样式 */
+            background-color: #007BFF; /* 按钮背景颜色 */
+            color: white;       /* 按钮文字颜色 */
+            border: none;       /* 去掉按钮边框 */
+            border-radius: 5px; /* 圆角边框 */
+        }
+
+        /* 鼠标悬停时按钮的效果 */
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>AUCEPTIN's</h1>
+    <h1>Welcome here</h1>
     <button onclick="relordPage()">点击这个按钮，进入一个神秘的网页</button>
 
     <script>
